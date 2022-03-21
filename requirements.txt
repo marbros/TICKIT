@@ -1,0 +1,4 @@
+fastapi==0.75.0
+joblib==1.1.0
+statsmodels==0.13.2
+uvicorn==0.17.6
