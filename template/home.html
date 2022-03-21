@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción</title>
+    <link rel="stylesheet" href="static/css/styles-l.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a href="https://deepnote.com/project/TICKIT-nuSMlJmGTduN9ox-bySmgg/%2Fnotebook.ipynb" target="_blank"> Ir al NoteBook</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="hero">
+            <h1> Modelo Forecast </h1>
+            <h3> Para Pronostico de Ventas.</h3>
+            <p>Por favor ingresa los siguientes datos para obtener la predicción de ventas
+                <strong>Nota:</strong> Aplica únicamente para fechas futuras al dataset.
+            </p>
+    </section>
+</div>
+
+<div class="container2">
+    <form action="\predict" method="post" enctype="multipart/form-data">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-title">Fecha de pronóstico</p>
+                <input type="date" min="2009-01-01" max="2009-01-07" value="2009-01-01" name="Day_p">
+            </div>
+        </div>
+        <input type="submit" class="btn" value="Enviar" >
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</div>
+
+<footer>
+    <p class="cred">Créditos: © Chiper 2022</p>
+    By Marbros
+</footer>
+
+</body>
+
+</html>
